@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <dialog>
+        <form action="#" id="bookForm">
+            <h2>Add a new Book</h2>
+            <input type="text" name="book_title" id="title" placeholder="Title" required>
+            <input type="text" name="book_author" id="author" placeholder="Author" required>
+            <input type="number" name="book_pages" id="pages" placeholder="Pages" required>
+            <div class="checkbox">
+                <label for="read">Have you read it?</label>
+                <input type="checkbox" name="book_read" id="read">
+            </div>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </dialog>
+
+    <div class="container">
+        <div class="header">
+            <div class="Title">
+                <h1>Library</h1>
+            </div>
+            <div class="Login">
+                <button>Login</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="add_book">
+                <button type="button" id="add_book">
+                    <h1>+ Add Book</h1>
+                </button>
+            </div>
+            <div class="books">
+            </div>
+        </div>
+        <div class="footer">banana</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

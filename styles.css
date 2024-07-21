@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto'
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: none;
+    align-items: center;
+}
+
+.container {
+    background-color: lightgray;
+}
+
+
+form button,
+form,
+input[type=text],
+input[type=number] {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form button {
+    width: 60%;
+    height: 50px;
+    background-color: rgba(1, 235, 1, 0.6);
+    /*background-color: #87d70e;*/
+    border-radius: 0.6em;
+
+}
+
+dialog {
+    min-width: 300px;
+    min-height: 300px;
+    text-align: center;
+    padding: 0;
+    border-radius: 1em;
+}
+
+form {
+    padding: 20px;
+}
+
+
+
+
+input[type=text],
+input[type=number] {
+    height: 2rem;
+    width: 80%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.main {
+    padding: 50px;
+}
+
+
+/*      books       */
+.add_book {
+    text-align: center;
+
+}
+
+.add_book button{
+    border: none;
+    background-color: transparent;
+}
+
+.add_book button:hover{
+    background-color: rgba(15, 16, 15, 0.1);
+}
+
+.books {
+    display: grid;
+    padding: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 280px;
+    background-color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 1em;
+
+}
+
+.book p{
+    display: flex;
+    gap: 1em;
+}
+
+.book_label{
+    width: 180px;
+    text-align: right;
+}
+
+.group_button {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    width: 60%;
+    gap: 10px;
+
+}
+
+.group_button>button {
+    height: 3em;
+    border-radius: 1em;
+    border: none;
+    font-size: 16px;
+}
+
+.group_button>.book_delete {
+    background-color: rgba(252, 37, 37, 0.5);
+}
+
+/*       footer      */
+.footer {
+    margin-top: auto;
+    text-align: center;
+}

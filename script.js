@@ -22,11 +22,6 @@ function addBookToLibrary() {
 
     library.push(newBook)
 
-    console.log(newBook)
-    console.log(newBook.title)
-
-    console.log(library)
-
     createCard(newBook);
 
 }
@@ -71,9 +66,6 @@ function createCard(book) {
         div2.appendChild(b1);
         div2.appendChild(b2);
 
-    // Store the book object as a property of the div
-    div.book = book;
-
     b1.textContent = book.read ? 'Read' : 'Not Read';
     b1.style.background = book.read ? 'rgba(1, 235, 1, 0.5)' : 'rgba(252, 37, 37, 0.5)';
     
@@ -88,6 +80,9 @@ function createCard(book) {
         
     })
 
+    // Store the book object as a property of the div
+    div.book = book;
+
     //      remove parent
     b2.addEventListener('click', function () {
         // remove the parent
@@ -99,10 +94,10 @@ function createCard(book) {
         if (index > -1) {
             library.splice(index, 1);
         }
-        console.log(library);
     });
 
 }
+
 
 //    Submit button
 bookForm.addEventListener('submit', (e) => {
@@ -126,7 +121,6 @@ bookForm.addEventListener('submit', (e) => {
 addButton.addEventListener('click', () => {
     dialog.showModal();
 })
-
 
 window.onclick = function (event) {
     if (event.target == dialog) {

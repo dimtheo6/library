@@ -12,8 +12,12 @@ form {
     align-items: center;
 }
 
+button{
+    cursor: pointer;
+}
+
 .container {
-    background-color: lightgray;
+    background-color: rgb(230, 229, 229);
 }
 
 
@@ -23,13 +27,14 @@ input[type=text],
 input[type=number] {
     font-size: 16px;
     font-weight: bold;
+    border: 1px solid gray;
 }
 
 form button {
     width: 60%;
     height: 50px;
     background-color: rgba(1, 235, 1, 0.6);
-    /*background-color: #87d70e;*/
+    border: none;
     border-radius: 0.6em;
 
 }
@@ -39,15 +44,14 @@ dialog {
     min-height: 300px;
     text-align: center;
     padding: 0;
-    border-radius: 1em;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgb(240, 235, 235);;
 }
 
 form {
     padding: 20px;
 }
-
-
-
 
 input[type=text],
 input[type=number] {
@@ -63,12 +67,23 @@ input[type=number] {
     flex-direction: column;
 }
 
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: white;
 }
+
+.header h1{
+    font-size: 35px;
+}
+
+.header button{
+    border: none;
+    background-color: transparent;
+}
+
 
 .main {
     padding: 50px;
@@ -84,9 +99,10 @@ input[type=number] {
 .add_book button{
     border: none;
     background-color: transparent;
+    
 }
 
-.add_book button:hover{
+button:hover{
     background-color: rgba(15, 16, 15, 0.1);
 }
 
@@ -102,7 +118,6 @@ input[type=number] {
 .book {
     display: flex;
     flex-direction: column;
-    text-align: center;
     height: 280px;
     background-color: white;
     font-size: 18px;
@@ -113,11 +128,12 @@ input[type=number] {
 
 .book p{
     display: flex;
+    margin-bottom: 10 ;
     gap: 1em;
 }
 
 .book_label{
-    width: 180px;
+    width: 150px;
     text-align: right;
 }
 
@@ -141,10 +157,4 @@ input[type=number] {
 
 .group_button>.book_delete {
     background-color: rgba(252, 37, 37, 0.5);
-}
-
-/*       footer      */
-.footer {
-    margin-top: auto;
-    text-align: center;
 }
